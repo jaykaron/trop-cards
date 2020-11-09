@@ -50,19 +50,19 @@ export const EXAMPLES: Example[] = [
 ];
 
 let ALL_BARA : Example[] = [];
-ALL_SYMBOLS.forEach((sym, i) => {
+ALL_SYMBOLS.forEach(({name, char}, i) => {
   ALL_BARA.push({
-    name: `bara-${i}-1`,
+    name: `${name} 1`,
     word: WORDS[0],
-    trop: [{ spot: 0, char: sym }]
+    trop: [{ spot: 0, char }]
   });
   ALL_BARA.push({
-    name: `bara-${i}-2`,
+    name: `${name} 2`,
     word: WORDS[0],
-    trop: [{ spot: 1, char: sym }]
+    trop: [{ spot: 1, char }]
   });
 });
-export {ALL_BARA};
+export { ALL_BARA };
 
 export const exampleToString = (example: Example) : string => {
   let text = example.word.text;
