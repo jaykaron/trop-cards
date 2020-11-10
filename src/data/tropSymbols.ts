@@ -26,10 +26,9 @@ export const QADMA = String.fromCharCode(1448);
 export const TELISHA_KETANA = String.fromCharCode(1449);
 export const YERAH_BEN_YOMO = String.fromCharCode(1450);
 
-export const ALL_SYMBOLS = [
+export const STANDARD_SYMBOLS = [
   { name: "ETNAHTA", char: ETNAHTA},
   { name: "SEGOL", char: SEGOL},
-  // { name: "SHALSHELET", char: SHALSHELET},
   { name: "ZAQEF_QATAN", char: ZAQEF_QATAN},
   { name: "ZAQEF_GADOL", char: ZAQEF_GADOL},
   { name: "TIPEHA", char: TIPEHA},
@@ -40,16 +39,22 @@ export const ALL_SYMBOLS = [
   { name: "TEVIR", char: TEVIR},
   { name: "GERESH", char: GERESH},
   { name: "GERSHAYIM", char: GERSHAYIM},
-  // { name: "QARNEY_PARA", char: QARNEY_PARA},
   { name: "TELISHA_GEDOLA", char: TELISHA_GEDOLA},
   { name: "PAZER", char: PAZER},
-  // { name: "ATNAH_HAFUKH", char: ATNAH_HAFUKH},
   { name: "MUNAH", char: MUNAH},
   { name: "MAHAPAKH", char: MAHAPAKH},
   { name: "MERKHA", char: MERKHA},
-  // { name: "MERKHA_KEFULA", char: MERKHA_KEFULA},
   { name: "DARGA", char: DARGA},
   { name: "QADMA", char: QADMA},
   { name: "TELISHA_KETANA", char: TELISHA_KETANA},
-  // { name: "YERAH_BEN_YOMO", char: YERAH_BEN_YOMO}
 ];
+
+export const RARE_SYMBOLS = [
+  { name: "SHALSHELET", char: SHALSHELET},
+  { name: "QARNEY_PARA", char: QARNEY_PARA},
+  { name: "ATNAH_HAFUKH", char: ATNAH_HAFUKH},
+  { name: "MERKHA_KEFULA", char: MERKHA_KEFULA},
+  { name: "YERAH_BEN_YOMO", char: YERAH_BEN_YOMO}
+];
+
+export const ALL_SYMBOLS = [...STANDARD_SYMBOLS, ...RARE_SYMBOLS];

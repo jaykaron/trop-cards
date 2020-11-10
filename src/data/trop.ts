@@ -1,5 +1,5 @@
 
-import { ALL_SYMBOLS, PASHTA, PAZER } from "./tropSymbols";
+import { PASHTA, PAZER, STANDARD_SYMBOLS } from "./tropSymbols";
 
 interface Word {
   name: string;
@@ -50,7 +50,7 @@ export const EXAMPLES: Example[] = [
 ];
 
 let ALL_BARA : Example[] = [];
-ALL_SYMBOLS.forEach(({name, char}, i) => {
+STANDARD_SYMBOLS.forEach(({name, char}, i) => {
   ALL_BARA.push({
     name: `${name} 1`,
     word: WORDS[0],
