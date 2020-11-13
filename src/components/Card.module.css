@@ -1,16 +1,9 @@
-.container {
-  cursor: pointer;
-  height: 400px;
-  width: 400px;
-  position: relative;
-  margin: 2rem auto;
-  transition: ease-in;
-}
-
 .main {
-  height: 300px;
-  width: 400px;
-  position: absolute;
+  height: 270px;
+  min-width: 400px;
+  width: fit-content;
+  padding: 0 3rem;
+  margin: 2rem auto;
   border: 1px solid #300;
   text-align: center;
   background-color: rgba(255, 251, 251, 1);

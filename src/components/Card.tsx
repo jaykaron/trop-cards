@@ -7,12 +7,10 @@ interface CardProps {
 }
 
 const Card : React.FC<CardProps> = ({ name, hebrewText }) => (
-  <div className={style.container}>
-    <div className={style.main}>
-      <h2>{name}</h2>
-      <div className={style.hebrew_container}>
-        <span className={style.hebrew_text}>{hebrewText}</span>
-      </div>
+  <div className={style.main}>
+    <h2>{name}</h2>
+    <div className={style.hebrew_container}>
+      <span className={style.hebrew_text}>{hebrewText}</span>
     </div>
   </div>
 );
