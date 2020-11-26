@@ -25,3 +25,30 @@ export const DARGA ="DARGA";
 export const QADMA ="QADMA";
 export const TELISHA_KETANA ="TELISHA_KETANA";
 export const YERAH_BEN_YOMO ="YERAH_BEN_YOMO";
+
+export type ALL_NAMES =
+  "ATNAH_HAFUKH" |
+  "DARGA" |
+  "ETNAHTA" |
+  "GERESH" |
+  "GERSHAYIM" |
+  "MAHAPAKH" |
+  "MERKHA" |
+  "MERKHA_KEFULA" |
+  "MUNAH" |
+  "PASHTA" |
+  "PAZER" |
+  "QADMA" |
+  "QARNEY_PARA" |
+  "REVIA" |
+  "SEGOL" |
+  "SHALSHELET" |
+  "TELISHA_GEDOLA" |
+  "TELISHA_KETANA" |
+  "TEVIR" |
+  "TIPEHA" |
+  "YERAH_BEN_YOMO" |
+  "YETIV" |
+  "ZAQEF_GADOL" |
+  "ZAQEF_QATAN" |
+  "ZARQA";
