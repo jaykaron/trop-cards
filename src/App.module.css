@@ -9,7 +9,7 @@
   margin-bottom: 3rem;
 }
 
-.buttonContainer {
+.row {
   display: flex;
   justify-content: space-around;
 }

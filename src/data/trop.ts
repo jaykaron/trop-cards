@@ -1,4 +1,5 @@
 
+import { Symbol } from "./tropSymbols";
 import { isHebrewLetter } from "./utils";
 
 export interface Word {
@@ -15,14 +16,16 @@ export const WORDS : Word[] = [
 
 export interface PlacedTrop {
   spot: number;
-  char: string;
+  symbol: Symbol;
 }
 
 export interface Example {
   name: string;
   word: Word;
-  trop: PlacedTrop[],
+  trop: PlacedTrop[];
+  audio?: string[]; 
 }
+
 export interface CompletedExample {
   text: string;
   name: string;
@@ -31,7 +34,7 @@ export interface CompletedExample {
 export const exampleToString = (example: Example) : string => {
   let text = example.word.text;
   return example.trop
-    .reduce((word, { char, spot }) => applyTropToWord(char, word, spot), text);
+    .reduce((word, { symbol, spot }) => applyTropToWord(symbol.char, word, spot), text);
 };
 
 export function applyTropToWord(trop: string, word: string, letterIndex: number) : string {
@@ -40,8 +43,8 @@ export function applyTropToWord(trop: string, word: string, letterIndex: number)
     .reduce((acc, char) => {
       acc += char;
       if (isHebrewLetter(char)) {
-        currentLetterIndex += 1;
-        if (currentLetterIndex === letterIndex){
+        currentLetterIndex += 1; 
+        if (currentLetterIndex === letterIndex) {
           acc += trop;
         }
       }
